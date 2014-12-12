@@ -1,0 +1,246 @@
+/*
+==============================================
+Base
+==============================================
+*/
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body{
+  background: #E2E2E2;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing:antialiased;
+  text-rendering: optimizeLegibility; 
+  line-height: 1.2;
+}
+
+a {
+  color:#fff;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4{
+  margin: 0;
+}
+
+h1{
+  font-size: 4.1875rem;
+}
+
+h2{
+  font-size: 3.125rem;
+}
+
+h3{
+  font-size: 2.3125rem;
+}
+
+p{
+ font-size: 1.3125rem;
+ line-height: 1.5;
+ margin: 0 0 1em; 
+}
+
+a{
+   color:#8bc349;
+}
+
+
+.uppercase{
+  text-transform: uppercase;
+}
+/*
+==============================================
+Layout
+==============================================
+*/
+
+
+.main-container{
+   margin:0 auto;
+   width: 90%;
+     max-width: 960px;
+}
+
+.ctas{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.banner{
+  box-shadow:0 1px 2px #aaa;
+  border-radius: 0.25rem;
+}
+
+section {
+  background: white;
+  box-shadow:0 1px 2px #aaa;
+  border-radius: 0.25rem;
+  min-height: 12.5rem;
+  padding:1.25rem;
+  position: relative;
+  
+}
+
+
+footer{
+  min-height: 5rem;
+  background:gray;
+  box-shadow:0 1px 2px #aaa;
+}
+
+section, footer, .main-container{
+  margin-top: 0.625rem;
+}
+
+
+
+
+
+/*
+==============================================
+Modules
+==============================================
+*/
+
+.banner{
+  background:url("../img/lucid-banner.jpg") no-repeat center -5rem  fixed;
+  background-size: 100%;
+  background-size:cover;
+  background-color: black;
+  color: white;
+  min-height: 25rem;
+}
+
+.items{
+  padding:0;
+}
+.item{
+  border-left: 6px solid #E5FFD4;
+  margin-bottom: 1.25rem;
+  padding:0.625rem;
+  width: 100%;
+
+}
+
+
+.item__title{
+  color:#8bc349;
+  
+}
+
+.item__date{
+ color:#B6B6B6;
+
+}
+
+.item__detail{
+  margin: 0;
+  padding-top: 0.625rem;
+
+}
+
+
+.logo__headline, 
+.logo__subheadline{
+  margin:0 auto;
+  text-align: center;
+}
+
+.logo__headline{
+  color:#8bc349;
+  text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+}
+.logo__subheadline{
+  color:#B6B6B6;
+  text-shadow: 2px 4px 3px rgba(139,195,73,0.3);
+  margin:0.3125rem 0;
+}
+
+.fa{
+ color:#8bc349;
+
+}
+
+.section__heading{
+  background:#8bc349;
+  color:white;
+  display: inline-block;
+  font-size: 21px;
+  left:-40px;
+  top:-20px;
+  min-width: 100px;
+  padding:10px; 
+  position: relative; 
+  
+}
+
+
+
+
+
+.section__heading:before, #top-bar:after {
+    bottom: -24px;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -10;
+}
+
+.section__heading:before {
+    border-color: transparent #444 transparent transparent;
+    border-style: solid;
+    border-width: 0 22px 25px 0;
+    height: 0;
+    left: -1px;
+    width: 0;
+}
+
+.section__heading:after {
+    border-color: #444 transparent transparent;
+    border-style: solid;
+    border-width: 25px 22px 0 0;
+    height: 0;
+    right: -1px;
+    width: 0;
+}
+
+.copyright{
+  color:white;
+  font-size: 1rem;
+  padding-top:1.875rem;
+  text-align: center;
+  
+}
+
+.item__image{
+  height:auto;
+  max-width: 100%;
+}
+
+
+/*
+==============================================
+States
+==============================================
+*/
+
+.fa:hover, .item__image:hover, a:hover{
+ opacity:.6;
+}
+
