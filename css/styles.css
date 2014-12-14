@@ -60,6 +60,9 @@ a{
    color:#8bc349;
 }
 
+li{
+  list-style: none;
+}
 
 .uppercase{
   text-transform: uppercase;
@@ -92,9 +95,13 @@ section {
   box-shadow:0 1px 2px #aaa;
   border-radius: 0.25rem;
   min-height: 12.5rem;
-  padding:1.25rem;
   position: relative;
-  
+}
+
+.content{
+
+  margin: 0 auto;
+  padding: 1.25rem 2.5rem;
 }
 
 
@@ -182,16 +189,13 @@ Modules
   color:white;
   display: inline-block;
   font-size: 21px;
-  left:-40px;
-  top:-20px;
+  left:-20px;
+  top:10px;
   min-width: 100px;
   padding:10px; 
   position: relative; 
   
 }
-
-
-
 
 
 .section__heading:before, #top-bar:after {
