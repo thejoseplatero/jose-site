@@ -231,7 +231,7 @@ Modules
  color:white;
  display:inline-block;
  float:left;
- font-size: 12px;
+ font-size: 16px;
  margin-bottom:10px;
  padding:10px;
  width: 100%;
@@ -300,22 +300,94 @@ Media Queries
 */
 
 
-/*
-==============================================
-Layout
-==============================================
-*/
 
-/*
-==============================================
-Modules
-==============================================
-*/
+/* Custom, iPhone Retina */ 
+  @media only screen and (min-width : 20rem) {
+    /* Base
+    ============== */
+    /* Layout
+    ============== */
+  
+    /* Module
+    ============== */
+    /* States
+    ============== */
 
-/*
-==============================================
-States
-==============================================
-*/
 
+    
+  }
+
+  /* Extra Small Devices, Phones */ 
+  @media only screen and (min-width : 30rem) {
+    /* Base
+    ============== */
+    /* Layout
+    ============== */
+
+    /* Module
+    ============== */
+    /* States
+    ============== */
+  
+  }
+
+  /* Small Devices, Tablets */
+  @media only screen and (min-width : 48rem) {
+    /* Base
+    ============== */
+    /* Layout
+    ============== */
+
+ 
+    /* Module
+    ============== */
+ 
+  
+    /* States
+    ============== */
+}
+
+  /* Medium Devices, Desktops */
+  @media only screen and (min-width :62rem) {
+   /* Base
+   ============== */
+   /* Layout
+   ============== */
+
+  
+   
+   /* Module
+   ============== */
+
+   .projects__skills{
+    display:block;
+    width: 96%;
+    margin: 0 auto;
+   }
+
+   .project__skill{
+    width: 30%;
+    margin-right:2%;
+   }
+
+
+   /* States
+   ============== */
+
+
+
+
+  /* Large Devices, Wide Screens */
+  @media only screen and (min-width : 75rem) {
+    /* Base
+    ============== */
+    /* Layout
+    ============== */
+
+    /* Module
+    ============== */
+    /* States
+    ============== */
+  
+  }
 
