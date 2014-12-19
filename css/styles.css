@@ -120,7 +120,7 @@ Modules
 
 
 .banner{
-  background:url("../img/lovejose.jpg") no-repeat center -10rem fixed;
+  background:url("../img/lovejose.jpg") no-repeat center center fixed;
   background-size: 100%;
   background-size:cover;
   background-color: black;
