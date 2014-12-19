@@ -86,7 +86,7 @@ Layout
 
 .l-content{
   margin: 0 auto;
-  padding: 1.25rem 2.5rem;
+  padding: 1.25rem 1.25rem;
 }
 
 
@@ -336,6 +336,9 @@ Media Queries
     ============== */
     /* Layout
     ============== */
+    .l-content{
+      padding: 1.25rem 2.5rem;
+    }
 
  
     /* Module
