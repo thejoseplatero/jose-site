@@ -120,7 +120,7 @@ Modules
 
 
 .banner{
-  background:url("../img/banner.jpg") no-repeat center -5rem  fixed;
+  background:url("../img/lovejose.jpg") no-repeat center -10rem fixed;
   background-size: 100%;
   background-size:cover;
   background-color: black;
@@ -138,25 +138,16 @@ Modules
   padding:0.625rem 0 2.5rem 0 ;
 }
 
-
-.logo__headline, 
-.logo__subheadline{
-  margin:0 auto;
+.logo{
+  width: 50%;
   text-align: center;
+
 }
 
-/*
-.logo__headline{
-  color:#8bc349;
-  text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
-
-}*/
 
 .logo__headline{
-
-  font-weight: 900;
-  background-color: #fff; 
-  color: #8bc349;
+  font-weight: 900; 
+  color: white;
   text-shadow:
     0 1px #808d93,
     -1px 0 #cdd2d5,
@@ -174,37 +165,31 @@ Modules
     -7px 6px #cdd2d5,
     -7px 8px #808d93,
     -8px 7px #cdd2d5;
-    padding-top: 1.25rem;
+
+
 }
 
 .logo__subheadline{
-  color:#B6B6B6;
+  color:white;
   text-shadow: 2px 4px 3px rgba(139,195,73,0.3);
   margin:0.3125rem 0;
-}
-
-.fa{
- color:#8bc349;
 
 }
 
-
-
-/*.project__heading{
-  background:#8bc349;
-  color:white;
-  display: inline-block;
-  font-size: 21px;
-  min-width: 50%;
-  padding:10px;   
-
-}*/
-
-
-/*.project__subheading{
-  padding:10px;
+.cta{
+ color:white;
 }
-*/
+
+.cta--alt{
+ color:#94D1AD;
+}
+
+.logo__headline, .logo__subheadline, .ctas{
+  position: relative;
+  top:40px;
+  left:20px;
+}
+
 
 .project__img-container{
   width: 100%;
@@ -222,24 +207,36 @@ Modules
 
 
 .section__heading{
-  background:#8bc349;
+  background:#94D1AD;
   color:white;
   display: inline-block;
   font-size: 21px;
   left:-20px;
-  top:10px;
   min-width: 100px;
   padding:10px; 
   position: relative; 
-  
+  top:10px; 
 }
 
 .section__heading--project{
- 
   position: absolute; 
-  
+}
+.project__skills, .project__links{
+  padding:10px;
 }
 
+.project__skill{
+ border:1px solid #E29589;
+ background: #E29589;
+ color:white;
+ display:inline-block;
+ float:left;
+ font-size: 12px;
+ margin-bottom:10px;
+ padding:10px;
+ width: 100%;
+ text-align: center;
+}
 
 
 .section__heading:before {
@@ -275,6 +272,9 @@ Modules
   
 }
 
+.copyright a{
+  color:white;
+}
 
 /*
 ==============================================
@@ -284,8 +284,13 @@ States
 
 .fa:hover, .item__image:hover, a:hover{
  opacity:.6;
+
 }
 
+.copyright a:hover{
+ opacity: 1;
+ font-size: 1.3125rem;
+}
 
 
 /*
