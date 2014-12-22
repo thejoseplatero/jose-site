@@ -20,6 +20,7 @@ Base
 
 body{
   background: #E2E2E2;
+  background-image:url(../img/xv.png);
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing:antialiased;
   text-rendering: optimizeLegibility; 
@@ -51,7 +52,7 @@ h3{
 }
 
 p{
- font-size: 1.3125rem;
+ font-size: 1rem;
  line-height: 1.5;
  margin: 0 0 1em; 
 }
@@ -79,17 +80,16 @@ Layout
 
 
 .l-main-container{
-   margin:0 auto;
-   width: 90%;
-   max-width: 960px;
+  margin:0 auto;
+  max-width: 60rem;
+  width: 96%;
+
 }
 
 .l-content{
   margin: 0 auto;
   padding: 1.25rem 1.25rem;
 }
-
-
 
 section {
   background: white;
@@ -101,8 +101,8 @@ section {
 
 
 footer{
-  min-height: 5rem;
   background:gray;
+  min-height: 5rem;
   box-shadow:0 1px 2px #aaa;
 }
 
@@ -128,21 +128,17 @@ Modules
   color: white;
   min-height: 25rem;
 
-
 }
 
 .ctas{
   margin: 0 auto;
-  text-align: center;
   padding:0.625rem 0 2.5rem 0 ;
+  text-align: center;
 }
 
 .logo{
-  width: 50%;
-  text-align: center;
-
+  margin-top: 0.625rem;
 }
-
 
 .logo__headline{
   font-weight: 900; 
@@ -164,15 +160,12 @@ Modules
     -7px 6px #cdd2d5,
     -7px 8px #808d93,
     -8px 7px #cdd2d5;
-
-
 }
 
 .logo__subheadline{
-  color:white;
+  color:#fff;
   text-shadow: 2px 4px 3px rgba(139,195,73,0.3);
   margin:0.3125rem 0;
-
 }
 
 .cta{
@@ -185,15 +178,14 @@ Modules
 
 .logo__headline, .logo__subheadline, .ctas{
   position: relative;
-  top:40px;
-  left:20px;
+  top:5rem;
+  left:2.5rem;
 }
 
 
-.project__img-container{
+.project__image-container{
   width: 100%;
   overflow: hidden;
-  
 }
 
 
@@ -202,6 +194,7 @@ Modules
   max-width: 100%;
   margin:0 auto;
   display: block;
+  -webkit-transition: all 1s; 
 }
 
 
@@ -209,62 +202,42 @@ Modules
   background:#94D1AD;
   color:white;
   display: inline-block;
-  font-size: 21px;
-  left:-20px;
-  min-width: 100px;
-  padding:10px; 
+  font-size: 1.3125rem;
+  min-width: 8.75rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+  padding:0.9375rem 0.625rem;
   position: relative; 
-  top:10px; 
+  z-index: 999;
 }
 
 .section__heading--project{
   position: absolute; 
 }
-.project__skills, .project__links{
-  padding:10px;
+
+.project__skills{
+ display:inline-block;
+ padding:0;
+ width: 100%;
 }
+
 
 .project__skill{
  border:1px solid #E29589;
  background: #E29589;
- color:white;
+ color:#fff;
  display:inline-block;
  float:left;
- font-size: 16px;
- margin-bottom:10px;
- padding:10px;
+ font-size: 1rem;
+ margin-bottom:0.625rem;
+ padding:0.625rem;
  width: 100%;
  text-align: center;
 }
 
 
-.section__heading:before {
-    bottom: -24px;
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: -10;
-}
-
-.section__heading:before {
-    border-color: transparent #444 transparent transparent;
-    border-style: solid;
-    border-width: 0 22px 25px 0;
-    height: 0;
-    left: -1px;
-    width: 0;
-}
-
-.section__heading:after {
-    border-color: #444 transparent transparent;
-    border-style: solid;
-    border-width: 25px 22px 0 0;
-    height: 0;
-    right: -1px;
-    width: 0;
-}
 .copyright{
-  color:white;
+  color:#fff;
   font-size: 1rem;
   padding-top:1.875rem;
   text-align: center;
@@ -272,7 +245,7 @@ Modules
 }
 
 .copyright a{
-  color:white;
+  color:#fff;
 }
 
 /*
@@ -291,6 +264,9 @@ States
  font-size: 1.3125rem;
 }
 
+.project__image:hover{
+   -webkit-transform: scale(1.25);
+}
 
 /*
 ==============================================
@@ -320,11 +296,19 @@ Media Queries
   @media only screen and (min-width : 30rem) {
     /* Base
     ============== */
+    p{
+      font-size: 1.3125rem;
+    }
     /* Layout
     ============== */
 
     /* Module
     ============== */
+
+    .logo__headline{
+      width: 90%;
+    }
+
     /* States
     ============== */
   
@@ -334,8 +318,15 @@ Media Queries
   @media only screen and (min-width : 48rem) {
     /* Base
     ============== */
+
     /* Layout
     ============== */
+
+    .l-main-container{
+       margin:0 auto;
+       width: 90%;
+    }
+
     .l-content{
       padding: 1.25rem 2.5rem;
     }
@@ -343,8 +334,35 @@ Media Queries
  
     /* Module
     ============== */
+
+
  
-  
+
+    .section__heading{ 
+      left:-1.25rem;
+      top:1.25rem;
+      min-width: 12.5rem;
+    
+    }
+
+
+    .section__heading:before {
+        bottom: -1.5rem;
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: -10;
+    }
+
+    .section__heading:before {
+        border-color: transparent #444 transparent transparent;
+        border-style: solid;
+        border-width: 0 22px 25px 0;
+        height: 0;
+        left: -1px;
+        width: 0;
+    }
+
     /* States
     ============== */
 }
@@ -361,17 +379,16 @@ Media Queries
    /* Module
    ============== */
 
-   .projects__skills{
-    display:block;
-    width: 96%;
-    margin: 0 auto;
-   }
 
-   .project__skill{
-    width: 30%;
-    margin-right:2%;
-   }
+ .project__skill{
+  width: 32%;
+  margin-right:2%;
+ }
 
+ .project__skill:last-child{
+  margin-right:0;
+
+ }
 
    /* States
    ============== */
