@@ -25,6 +25,7 @@ body{
   -webkit-font-smoothing:antialiased;
   text-rendering: optimizeLegibility; 
   line-height: 1.2;
+
 }
 
 a {
@@ -125,19 +126,17 @@ Modules
   background-size:cover;
   box-shadow:0 1px 2px #aaa;
   border-radius: 0.25rem;
-  color: white;
+  color: #fff;
   min-height: 25rem;
 
 }
 
-.ctas{
-  margin: 0 auto;
-  padding:0.625rem 0 2.5rem 0 ;
-  text-align: center;
-}
 
 .logo{
-  margin-top: 0.625rem;
+  display:inline-block;
+  margin: auto;
+  padding:10%;
+  text-align: center;
 }
 
 .logo__headline{
@@ -168,18 +167,13 @@ Modules
   margin:0.3125rem 0;
 }
 
+
 .cta{
- color:white;
+ color:#fff;
 }
 
 .cta--alt{
  color:#94D1AD;
-}
-
-.logo__headline, .logo__subheadline, .ctas{
-  position: relative;
-  top:5rem;
-  left:2.5rem;
 }
 
 
@@ -200,7 +194,7 @@ Modules
 
 .section__heading{
   background:#94D1AD;
-  color:white;
+  color:#fff;
   display: inline-block;
   font-size: 1.3125rem;
   min-width: 8.75rem;
