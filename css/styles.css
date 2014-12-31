@@ -94,8 +94,6 @@ Layout
 
 section {
   background: white;
-  box-shadow:0 1px 2px #aaa;
-  border-radius: 0.25rem;
   min-height: 12.5rem;
   position: relative;
 }
@@ -107,7 +105,7 @@ footer{
   box-shadow:0 1px 2px #aaa;
 }
 
-section, footer, .l-main-container{
+section, footer{
   margin-top: 0.625rem;
 }
 
@@ -309,8 +307,8 @@ Media Queries
     ============== */
 
     .l-main-container{
-      /* margin:0 auto;*/
        width: 90%;
+       margin-top: 0.625rem;
     }
 
     .l-content{
@@ -321,6 +319,11 @@ Media Queries
     /* Module
     ============== */
 
+
+    section {
+      box-shadow:0 1px 2px #aaa;
+      border-radius: 0.25rem;
+    }
 
  
 
