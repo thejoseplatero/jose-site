@@ -83,7 +83,7 @@ Layout
 .l-main-container{
   margin:0 auto;
   max-width: 60rem;
-  width: 96%;
+  width: 100%;
 
 }
 
@@ -124,10 +124,14 @@ Modules
   background:url("../img/lovejose.jpg") no-repeat center center fixed;
   background-size: 100%;
   background-size:cover;
+   -webkit-background-size: cover;
+  background-size: cover;
   box-shadow:0 1px 2px #aaa;
   border-radius: 0.25rem;
   color: #fff;
   min-height: 25rem;
+  min-width: 100%;
+  min-height: 100%
 
 }
 
@@ -141,6 +145,10 @@ Modules
 }
 
 
+.logo__headline{
+    font-size: 3.125rem;
+  
+}
 
 .logo__subheadline{
   color:#fff;
@@ -173,6 +181,7 @@ Modules
   margin:0 auto;
   display: block;
   -webkit-transition: all 1s; 
+  transition: all 1s;
 }
 
 
@@ -232,7 +241,7 @@ States
 ==============================================
 */
 
-.fa:hover, .item__image:hover, a:hover{
+.fa:hover, .project__link:hover{
  opacity:.6;
 
 }
@@ -244,6 +253,8 @@ States
 
 .project__image:hover{
    -webkit-transform: scale(1.25);
+   transform: scale(1.25);
+
 }
 
 /*
@@ -283,10 +294,7 @@ Media Queries
     /* Module
     ============== */
 
-    .logo__headline{
-      width: 90%;
-    }
-
+  
     /* States
     ============== */
   
