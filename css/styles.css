@@ -156,12 +156,17 @@ Modules
 .ctas{
   text-align: center;
 }
+
+.ctas--alt{
+  padding-top: 3.75rem;
+}
 .cta{
  color:#fff;
 }
 
 .cta--alt{
  color:#94D1AD;
+ padding-top: 20%;
 }
 
 
@@ -187,17 +192,17 @@ Modules
   display: inline-block;
   font-size: 1.3125rem;
   min-width: 8.75rem;
-  margin-bottom: 1.25rem;
   text-align: center;
   padding:0.9375rem 0.625rem;
   position: relative; 
   z-index: 999;
 }
-
+/*
 .section__heading--project{
   position: absolute; 
+  display: none;
 }
-
+*/
 .project__skills{
  display:inline-block;
  padding:0;
@@ -330,9 +335,9 @@ Media Queries
 
     .section__heading{ 
       left:-1.25rem;
-      top:1.25rem;
+      top:0.875rem;
       min-width: 12.5rem;
-    
+      margin-bottom: 0.625rem;
     }
 
 
