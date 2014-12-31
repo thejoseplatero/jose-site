@@ -197,12 +197,7 @@ Modules
   position: relative; 
   z-index: 999;
 }
-/*
-.section__heading--project{
-  position: absolute; 
-  display: none;
-}
-*/
+
 .project__skills{
  display:inline-block;
  padding:0;
