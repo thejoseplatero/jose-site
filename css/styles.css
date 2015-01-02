@@ -206,9 +206,8 @@ Modules
 
 
 .project__skill{
- border:1px solid #E29589;
- background: #E29589;
- color:#fff;
+ border-bottom:1px solid #E29589;
+ color:#E29589;
  display:inline-block;
  float:left;
  font-size: 1rem;
