@@ -122,8 +122,7 @@ Modules
   background:url("../img/lovejose.jpg") no-repeat center center fixed;
   background-size: 100%;
   background-size:cover;
-   -webkit-background-size: cover;
-  background-size: cover;
+  background-attachment: scroll; 
   color: #fff;
   min-height: 25rem;
   min-width: 100%;
